@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Idioma padrão do site...-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--Caracteres Especiais-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Para ser compátivel com o site Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Responsivo, Para se adaptar com o tamanho da tela do aparelho-->
+    <title>KI.Beleza - Clínica de Estética</title>
+
+    <!--Para ficar a logo lá em cima na aba do site, fica do lado do nome-->
+    <link rel="icon" href="img/logo.svg">
+
+    <!--Animação do Destaque, pegado do site "lity js" no google-->
+    <link href="css/lity.css" rel="stylesheet">
+
+    <!--Resetar os arquivos CSS, ou seja, retirar os padrões do HTML-->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Carrosel, pego no site slick-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <!--Animação da Logo, site anima.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Meu estilo CSS - sempre por último-->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!--CORPO DO SITE-->
+    <header>
+        <!--COMEÇO DO TOPO-->
+        <section class="faixaPreta">
+            <!--Colocar esse nome "faixa_vinho" para indentificar aonde vai o CSS-->
+            <!--Essa caixa pega praticamente tudo do conteudo-->
+            <!--TOPO-->
+            <article class="site topo">
+                <!--Foi colocado para colocar o tamanho do conteudo pricipal do site, ele é menor que o section que pega praticamente tudo-->
+                <!--Esse nome de "Topo" ele é um nome separado  do site -->
+                <div><img src="img/Icones/telefone.svg" alt="">
+                    <h2>(11) 999 999 999</h2>
+                </div>
+                <ul>
+                    <!--Lista não Ordenada-->
+                    <li><a href="#"><img src="img/Icones/facebook (2).svg" alt=""></a></li>
+                    <!--Conteudo da Lista-->
+                    <li><a href="#"><img src="img/Icones/instagram.svg" alt=""></a></li>
+                    <!--Conteudo da Lista-->
+                    <li><a href="#"><img src="img/Icones/twitter.svg" alt=""></a></li>
+                    <!--Conteudo da Lista-->
+                    <li><a href="#"><img src="img/Icones/whatsapp.svg" alt=""></a></li>
+                    <!--Conteudo da Lista-->
+                </ul>
+            </article>
+        </section>
+        <section class="menu">
+            <!--MENU-->
+            <article class="site topo">
+                <!--Colocou esse nome para pegar as especificações da classe "site" no css-->
+                <h1 class="animate__animated animate__rubberBand"><img src="img/LogoKiBeleza.svg" alt="Logo"></h1>
+                <button class="abrirMenu">
+                    <!--Botão Menu-->
+                </button>
+                <nav><!--Tem essa estrutura como se fosse uma div, mais é especifico para navegação-->
+                    <button class="fecharMenu"><!--Botão Fechar Menu--></button>
+                    <ul>
+                        <a href="#" class="item-menu ativo">
+                            <!--Essas classes para poder destacar o botão no site-->
+                            <li>HOME</li>
+                        </a>
+                        <!--Passou a ser linkavel, Para deixar linkavel tem que deixar entre os "<a></a>"-->
+                        <a href="#" class="item-menu">
+                            <li>SOBRE</li>
+                        </a>
+                        <a href="#" class="item-menu">
+                            <li>SERVIÇO</li>
+                        </a>
+                        <a href="#" class="item-menu">
+                            <li>BLOG</li>
+                        </a>
+                        <a href="#" class="item-menu">
+                            <li>CONTATO</li>
+                        </a>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+        <!--FIM DO TOPO-->
+    </header>
+    <main>
+        <!--COMEÇO DO CONTEUDO-->
+        <section class="banner">
+            <!--Full do site-->
+            <img src="img/bem_10.jpg" alt="banner">
+            <img src="img/lorde_farquaad.jpg" alt="banner">
+            <img src="img/obrahma.jpg" alt="banner">
+            <img src="img/steve.jpg" alt="banner">
+
+            <!--Colocar imagem, esse "#" server para fazer referencia a um link-->
+        </section>
+        <section class="sobre">
+            <article class="site">
+                <div class="topo">
+                    <!--Seria a subdivisão  para colocar um item do lado do outro, uma caixa menor que "article"-->
+                    <img src="img/sobre.png" alt="Sobre">
+                    <div>
+                        <h2>Sobre</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vero possimus, culpa ratione
+                            magni eos! Voluptas iure, ab nisi delectus obcaecati dolore nesciunt nobis odio dolor
+                            aperiam reprehenderit dicta voluptates?</p>
+                        <h3>Leia Mais >>></h3>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="servico">
+            <article class="site">
+                <h2>Serviços</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="conteudoServico">
+                    <div>
+                        <img src="img/servico01.png" alt="Serviço 01">
+                        <h3>Serviço 01</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div>
+                        <img src="img/servico02.png" alt="Serviço 02">
+                        <h3>Serviço 02</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div>
+                        <img src="img/servico03.png" alt="Serviço 03">
+                        <h3>Serviço 03</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="img/servico04.png" alt="Serviço 04">
+                        <h3>Serviço 04</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        <section class="destaque">
+            <div></div>
+            <a href="https://www.youtube.com/watch?v=6pEJg1VDuns" data-lity><img src="img/Botao-destaque.png"
+                    alt="play"></a>
+        </section>
+        <section class="equipe">
+            <article class="site">
+                <h2>Equipe</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="conteudoEquipe">
+                    <div>
+                        <img src="img/Equipe01.jpg" alt="Equipe01">
+                        <h3>Nome: Gigachad superior</h3>
+                    </div>
+                    <div>
+                        <img src="img/Equipe02.png" alt="Equipe02">
+                        <h3>Nome: Gigante Tom Holland </h3>
+                    </div>
+                    <div>
+                        <img src="img/Equipe03.jpg" alt="Equipe03">
+                        <h3>Nome: Mauricio</h3>
+                    </div>
+                    <div>
+                        <img src="img/Equipe04.jpg" alt="Equipe04">
+                        <h3>Nome: Ratuê</h3>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="galeria">
+            <img src="img/Galeria01.png" alt="Galeria01">
+            <img src="img/Galeria02.png" alt="Galeria02">
+            <img src="img/Galeria03.png" alt="Galeria03">
+            <img src="img/Galeria04.png" alt="Galeria04">
+            <img src="img/Galeria05.png" alt="Galeria05">
+            <img src="img/Galeria06.png" alt="Galeria06">
+            <img src="img/Galeria07.png" alt="Galeria07">
+            <img src="img/Galeria08.png" alt="Galeria07">
+        </section>
+        <section class="depoimento">
+            <article class="site">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus reprehenderit
+                    optio? Quos maiores laudantium id, deserunt, sapiente quae saepe omnis impedit ipsa enim et
+                    exercitationem repellendus, veniam officiis sint?</p>
+                <h4>Devid Bonardo</h4>
+            </article>
+        </section>
+        <section class="news">
+            <article class="site">
+                <h2>News</h2>
+                <div class="conteudoNews">
+                    <div>
+                        <img src="img/news01.png" alt="Serviço 01">
+                        <h3>Serviço 01</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis temporibus aut corporis
+                            suscipit aperiam voluptas perspiciatis necessitatibus repellat quam cupiditate magni
+                            doloremque, deserunt voluptatum accusamus, repellendus hic atque veritatis vitae?</p>
+                    </div>
+                    <div>
+                        <img src="img/news02.png" alt="Serviço 02">
+                        <h3>Serviço 02</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni optio aliquam doloribus
+                            tenetur, beatae quod adipisci nam ea consequatur obcaecati. Sit, voluptatem numquam officiis
+                            iusto harum eligendi quam odio inventore.</p>
+                    </div>
+                    <div>
+                        <img src="img/news03.png" alt="Serviço 03">
+                        <h3>Serviço 03</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, rerum architecto fugiat est
+                            animi quia nihil sit reiciendis optio quod quam itaque omnis assumenda veritatis nisi,
+                            accusantium, ipsa deserunt esse?</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <!--FIM DO CONTEUDO-->
+    <footer>
+        <!--COMEÇO DO RODAPÉ-->
+        <section class="info">
+            <article class="site topo">
+                <div class="infoSobre">
+                    <h3>Sobre</h3>
+                    <img src="img/LogoKiBeleza.svg" alt="logoRodape" class="logoRodape">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus totam maxime incidunt
+                        aspernatur quisquam distinctio repellendus? Blanditiis cupiditate impedit, similique fugiat
+                        eaque, beatae veniam necessitatibus corporis nisi est tenetur alias?</p>
+                    <div>
+                        <img src="img/Icones/facebook (2).svg" alt="face">
+                        <img src="img/Icones/instagram.svg" alt="insta">
+                        <img src="img/Icones/twitter.svg" alt="twitter">
+                        <img src="img/Icones/whatsapp.svg" alt="whats">
+                    </div>
+                </div>
+                <div class="infoLink">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <!--Deixei o link "a" dentro da li para ele funcionar somente o texto como link não o conteiner do li, mais somente o texto como link-->
+                        <li><a href="#">SOBRE</a></li>
+                        <li><a href="#">SERVIÇO</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </div>
+                <div class="infoContato">
+                    <div>
+                        <img src="img/Icones/telefone.svg" alt="logoTelefone">
+                        <div>
+                            <p>+55 11 988 626 603</p>
+                            <p>+55 11 988 626 604</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/Icones/gmail.svg" alt="logoEmail">
+                        <p>contato@kibeleza.com.br</p>
+                    </div>
+                    <div>
+                        <img src="img/Icones/endereço.svg" alt="logoEndereço">
+                        <div>
+                            <p>Av. Marechal Titi, 5000</p>
+                            <p>São Miguel Paulista - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="direitos">
+            <p>© Todos os direitos reservados - <span>TI14 SMP SENAC</span></p>
+            <!--Esse "span" digamos que server para focar so naquela parte do texto, ai no caso essa parte do texto vai ter uma cor diferenciada, no caso rosa, pode ser usado em outros lugares-->
+        </section>
+        <!--FIM DO RODAPÉ-->
+
+        <!--Esse é o jQuery, precisa dele para usar o JavaScript do slick, acomselhavo pesquisar por jQuery no google, ir em download, e compiar o que tem o "https" e copiar e colar, e colocar como script-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!--Colocar como Scrip os arquivos que vão utilizar o JavaScript, carrosel do site-->
+        <script src="js/slick.min.js"></script>
+
+        <!--Animação Destaque-->
+        <script src="js/lity.js"></script>
+
+        <!--Faiz Parte do carrosel do site, sempre por ultimo, por causa que é um arquivo que você criou -->
+        <script src="js/minhaAnimacao.js"></script>
+
+    </footer>
+
+
+</body>
+
+</html>

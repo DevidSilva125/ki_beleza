@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@700&family=Rajdhani:wght@300&display=swap');
+
+/*font-family: 'Lobster', cursive; /* Título de área */
+/*font-family: 'PT Sans', sans-serif; /* Menu e Link */
+/*font-family: 'Rajdhani', sans-serif; /* Caixa de texto */
+
+body{
+    background: url(../img/dust_scratches.png);
+}
+p { /*Esse caminho vai servir para todos os "p" */
+    font-family: 'Rajdhani', sans-serif;/*Fonte da letra*/
+}
+.faixaPreta{
+    background: #262626;
+    color: white;
+    display: flex; /*Coloca os item um do lado do outro do outro*//*Utilzar sempre com o justify-content, pois se não usar ele não vai funcionar, ele serve para deixar o conteudo flexivel para funcionar o justify-content*/
+    justify-content: center; /*Para centralizar os items*/
+}
+.site{
+    width: 100%; /*Largura, adapta ao tamanho da tela (o que "acompanha") */
+    max-width: 1200px; /*O maximo que ele acompanha aumentando a página, o distanciamento que vai ficar no meio em cima do conteudo do site*/
+}
+.topo{
+    display: flex; /* Precisa usar isso toda vez que utilar o "justify-content" ou "align-items" etc...*/
+    justify-content: space-between;/*Para afastar as letras dos titulos, Espaçamento central entre os itens*//*Alinha ou manipula a horizontal*/
+    align-items: center;
+}
+.topo div h2 {
+    display: flex;
+    align-items: center; /*Centraliza na vertical ou manipula na vertical*/
+    margin-left: 10px;
+}
+.topo div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topo div img{
+    height: 40px;
+    width: 40px;
+}
+.topo ul{ /*Para colocar essa função especifica no "ul", pode ver que esse nome "topo" é o segundo nome do "article"*/
+    display: flex;
+    justify-content: space-between;
+}
+.topo li { /*Para especificar as "li" na "ul" ou em outra lista, especificando o tamanho, nesse caso é especificar o tamanho das li na classe "topo", por isso */
+    width: 40px; /*Largura*/
+    height: 40px; /*Altura*/
+    margin-top: 5px; /*Margem superior*/
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.topo li a img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.menu {
+    background: #948ebf;
+    display: flex;
+    justify-content: center;
+}
+.menu button {/*Para retirar o button, que estava estragando na parte do site do html, esse button é importante porque faiz parte do responsivo Mobile menu*/
+    display: none;
+}
+.menu article h1 { /*Essa é a parte da logo*/
+    height: 120px;
+    margin: 15px;
+    width: 300px;
+}
+.menu article ul { /*Esta dessa maneira para especificar a "ul" que ela está dentro da classe "menu" dentro da classe "article" até chegar a "ul"*/
+    display: flex;;
+    justify-content: space-between;
+    align-items: center; /*Posisiona o item na parte vertical, nesse comando foi o alinhamento no centro*/
+}
+
+/******************************************Botão Menu, para a Animação************************************************************************/
+.menu article ul a {
+    color: #401230;
+    text-decoration: none;
+}
+.menu article ul .ativo {
+    color: #8c375f;
+    font-size: 1.5rem;/*Multiplica a medida determinada*/
+}
+.menu article ul a:hover{/*Esse ":hover" e de quando passar o mouse, ele vai fazer oque esta em baixo*/
+    color: #8c375f;
+    font-size: 1.5rem;
+}
+/********************************************************************************************************************************************/
+
+.menu article ul a li {
+    width: 90px;
+    display: flex;
+    justify-content: center;/*Foi utilizado esse dois para alinhar o texto mesmo sendo para alinhar items ou imagens, justamente porque esses dois se interligam, server para alinhar o texto ou imagem no centro*/
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    /*text-align: center; /*Para centralizar o texto*/
+    /*padding: 20px; É a margem interna*/
+    /*border: 2px black solid; Essa é a borda do objeto, é como se fosse a borda do word com a linha preta, fica depois do padding (margem interna)*/
+}
+.banner img {
+    height: 500px;
+    width: 100%;
+    background-size: 100% 100%;
+}
+/*Setas do Banner*/
+.banner .slick-prev{/*Para especificar o slick que está dentro do banner*/
+    left: 25px;
+    z-index: 99;
+}
+.banner .slick-next{
+    right: 25px;
+}
+.banner .slick-prev::before, /*Esse "::before" e para esses comandos funcionar somente nos botões*/
+.banner .slick-next::before{
+    font-size: 30px;
+    color: #948ebf;
+}
+/************************/
+.sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.sobre img {
+    width: 580px;
+    height: 350px;
+    border-radius: 0 15px 0 25px; /*Arredodamento da borda*/
+    background: darkblue;
+    margin: 10px;
+    box-shadow: 0px 5px 10px black;/*Colocar sombreamento*//*Primeiro valor a direita, segundo valor inferior, terceiro disperção da sombra*/
+}
+.sobre h2{
+    font-family: 'Lobster', cursive; /*Fonte*/
+    font-size: 35px; /*Tamanho da fonte*/
+    display: flex;
+    justify-content: flex-start;
+}
+.sobre .site .topo div{
+    width: 580px;
+    height: 350px;
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.sobre p {
+    text-align: justify; /*Alinhar o texto (como no do word)*/
+}
+.sobre h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15pt;
+    /*text-align: right;/*Jogar texto para o lado direito*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background: #948ebf;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px 0 5px 0;
+    border: 1px #a64941 solid; /*Colocar uma borda da cor definida no conteiner*/
+}
+.servico {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 0 0; /*Margem nas conteiner/caixa, funciona como sentido horário, primeiro numero px margem superior, segundo numero px margem direita, terceiro numero de px margem inferior, quarto numero px margem esquerda */
+    padding: 20px 0;
+    background: url(../img/Serviço-fundo.png);
+    background-size: 100% 100%; /*Serve para se adaptar ao tamanho da div dentro da section, para a div não ultrapassar o tamanho da section caso aja um texto grande na div ele ira acompanhar*/
+}
+.servico .site h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 25pt;
+}
+.servico .site p {
+    margin: 15px 0 20px 0;
+    text-align: center;
+}
+.servico .site .conteudoServico {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.servico .site .conteudoServico div {
+    /*padding: 5px;/*Interessante relevar usar a margem interna caso houver uma consideração de colocar uma imagem no fundo onde esta esse conteiner, porque com a margem externa não vai conseguir fazer, porque ela vai estar jogando para fora da margem justamente por ela ser a externa, se for a interna digamos que vai se manter nela não para fora (mais ou menos, isso não está 100% correto), e também essa função vai fazer com que coloquemos margem dentro dos conteiners ou seja os afastandou das pontas do conteiner*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+}
+.servico .site .conteudoServico div img {
+    width: 250px;
+    height: 320px;
+    background: deeppink;
+    display: flex;
+    margin: 0px 20px
+}
+.servico .site .conteudoServico div h3 {
+    margin: 10px 0;
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+}
+.servico .site .conteudoServico div p {
+    margin: 15px 20px 30px 20px;
+    text-align: justify;/*Tirar a centralização do texto*//*Para justificar o texto, separar ele, como aquela opção do word*/
+}
+.destaque {
+    width: 100%;
+    height: 600px;
+    /*z-index: 5; jogar como camada principal, se colocar como um numero positivo, ou seja 5 camadas a cima, negativo camadas atraz*/ 
+    background: url(../img/Fundo-destaque.png) no-repeat;/*Colocar a imagem de fundo, esse "no-repeat" é para não repetir a imagem, esse "../" é para voltar uma pasta porque o css já faiz parte de uma pasta*/
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destaque div {
+    width: 100%;
+    height: 00px;
+    background: black;
+    position: absolute;/*Ocupa todo o conteiner para ela, não importa o que se ponha no conteiner o espaço será para ele, se não usar vai jogar o itens para o lado diminuindo o seu tamanho*/
+    opacity: 0.6;
+}
+.destaque img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /*Colocar o quadrado como um circulo*/
+    position: relative; /*Como se fosse a primeira camada do photoshop*/
+}
+.equipe {
+    display: flex;
+    justify-content: center;
+    /*margin: 50px 0 0 0; /*Margem nos conteiner/caixa, funciona como sentido horário, primeiro numero px margem superior, segundo numero px margem direita, terceiro numero de px margem inferior, quarto numero px margem esquerda */
+    background:  cyan;
+    padding: 20px 0;/*Margem interna, coloca uma margem dentro do conteiner, afastando conteudo de dentro do conteiner das pontas da ponta*/
+    background: url(../img/Equipe-fundo.jpg);
+    background-size:  100% 100%;
+}
+.equipe .site h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 25pt;
+}
+.equipe .site p {
+    margin: 15px 0 20px 0;
+    text-align: center;
+}
+.equipe .site .conteudoEquipe {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.equipe .site .conteudoEquipe div {
+    /*padding: 5px;/*Interessante relevar usar a margem interna caso houver uma consideração de colocar uma imagem no fundo onde esta esse conteiner, porque com a margem externa não vai conseguir fazer, porque ela vai estar jogando para fora da margem justamente por ela ser a externa, se for a interna digamos que vai se manter nela não para fora*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+}
+.equipe .site .conteudoEquipe div img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 50%;
+    margin: 80px 20px 50px 20px;
+}
+.equipe .site .conteudoEquipe div h3 {
+    margin: 10px 0;
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+}
+.galeria {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    /*flex-wrap: wrap; /*Quebra os items comforme a medida que vai aparacendo, usei por causa do JavaScript, para não deixar achatado para quebrar*/
+    align-items: center;
+}
+.galeria img {
+    height: 200px;
+    width: 200px;
+    background: #948ebf;
+    margin: auto 50px;/*Se coloca automatico, se houver um complexo em cima não põem margem, apenas nos lados, se adapta automaticamente com base na estrutura do site,*/
+}
+/*.galeria .slick-next, 
+.galeria .slick-prev {
+    display: none;/*Retira o display*/
+.depoimento {
+    width: 100%;
+    height: 600px;
+    /*background: #00000050;/*Esse "50" é a porcentagem de opacidade na cor*/
+    background: url(../img/Depoimento-fundo.png) no-repeat;
+    background-size: 100% 100%;
+}
+.depoimento article {
+    color: white;
+    margin: auto;/*Vai um automatico, ou seja ele se ajusta*/
+    font-size: 20pt;
+    /*position: relative; caso a imagem de fundo não fosse tratada, serve para destacar o texto*/
+}
+.depoimento article p {
+    line-height: 35pt; /*Distanciamento das palavras na parte superior a palavra*/
+    padding: 100px 0;
+    text-align: center;
+}
+.depoimento article h4 {
+    text-align: right;
+    font-style: italic;
+    padding-bottom: 100px;
+    font-family: 'PT Sans', sans-serif;
+}
+.news {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: url(../img/fundo-news.png) no-repeat;
+    background-size: 100% 100%; 
+}
+.news .site h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 25pt;
+    color: #d89ad9;
+}
+.news .site .conteudoNews {
+    width: 100%;
+    height: auto;/*Para retirar a altura fixa, para ele se auto adaptar*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.news .site .conteudoNews div {
+    /*padding: 5px;/*Ele empurra os items para longe das pontas do conteiner, é uma margem que é colocada internamente*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    height: 580px;
+}
+.news .site .conteudoNews div img {
+    width: 294px;
+    height: 400px;
+    display: flex;
+    margin: 0px 20px;
+    border: solid 3px #8b63a6;/*Colocar uma bordar em volta*/
+}
+.news .site .conteudoNews div h3 {
+    margin: 10px 0;
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+}
+.news .site .conteudoNews div p {
+    margin: 0px 20px 30px 20px;
+    text-align: justify
+}
+.info {
+    background: url(../img/fundo-rodapé.png) no-repeat;
+    background-size: 100% 100%; /*Para poder pegar 100% do conteiner, mais utilizados em imagens, para poder a companhar o zoom do site*/
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.info h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 28pt;
+}
+.info .topo {
+    margin: 60px 0 120px 0;
+    
+}
+.info .infoSobre {
+    width: 480px;
+    height: 420px;
+    /*padding-right: 120px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info .infoSobre .logoRodape {
+    min-width: 350px;
+    min-height: 140px;
+    margin: 15px 10px;
+}
+.info .infoSobre p {
+    width: 350px;
+    margin: 0 10px;
+    text-align: justify;    
+}
+.info .infoSobre div {
+    height: 60px;
+    width: 350px;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.info .infoSobre div img {
+    width: 60px;
+    height: 60px;
+}
+.info .infoLink {
+    height: 420px;
+    width: 400px;
+    text-align: center;
+}
+.info .infoLink ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.info .infoLink ul li {
+    width: 100%;
+    margin-top: 15px;
+}
+.info .infoLink ul a {
+    color: white;
+    text-decoration: none; /*Para retirar o sublinhado do texto, porque como ele tá dentro do comando "a" vai ser um link e vai ter uma linha em baixo, esse comando remove essa linha*/
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15pt;
+}
+.info .infoContato {
+    width: 480px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info .infoContato div {
+    display: flex;
+    width: 380px;
+    height: 60px;
+    align-items: center;
+}
+.info .infoContato div img {
+    width: 60px;
+    height: 60px;
+}
+.info .infoContato div div {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info .infoContato div p {
+    margin-left: 30px;
+    font-size: 18pt;
+    font-weight: bold; /*Coloca o negrito no texto*/
+    text-align: left;
+}
+.direitos {
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.direitos span {
+    color: #d89ad9;
+}
+
+
+/************************************************Responsivo*************************************************************************/
+@media (max-width: 960px) {/*Entra o responsivo, colocamos para que quando for menos que 800px ele vai fazer as edições que colocaremos*/
+    .sobre .site .topo {
+        flex-wrap: wrap;/*Quebra os conteudo quando da justo, ou seja, joga um para baixo do outro nesse caso*/
+        justify-content: center;
+    }
+    .servico .conteudoServico {
+        flex-wrap: wrap;
+    }
+    .equipe .conteudoEquipe {
+        flex-wrap: wrap;
+    }
+    .news .conteudoNews div {
+        background: #ffffff50;
+        margin: 0 20px;
+    }
+    .news .site .conteudoNews{
+        display: flex;
+        justify-content: center;
+    }
+    .news {
+        height: auto;
+    }
+    .depoimento {
+        height: auto;
+    }
+    .depoimento div {
+        height: auto;
+    }
+    .info {
+        height: auto;
+    }    
+    .info article {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .info article .infoSobre {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .info .infoLink {
+        height: auto;
+        background: #40123050;
+    }
+    .info article .infoSobre {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .info article .infoContato {
+        align-items: center;
+    }
+}
+@media (max-width: 600px){
+    .faixaPreta .site div img{
+        display: none;
+    }
+    .faixaPreta .site ul{
+        width: 100%;
+    }
+
+    /********************************************************Menu Mobile***********************************************************************/
+    .menu button {/*Para ativar a função button no responsivo Menu Mobile, que havia sido desativado sem ser dentro do responsivo*/
+        display: block;
+    }
+    .menu nav{
+        position: fixed;
+        height: 100%;
+        background: #8b63a650;
+        z-index: 9999;
+        padding: 10px;
+        margin: 0;
+        top: 0;
+        max-width: 250px;
+        width: 50%;/*Para pegar até a metade da tela do celular, não importando o tamanho*/
+        right: -250px;
+        transition: right .5s ease-out;/*Foi definido para ele vir da direita para esquerda o menu*/
+    }
+    .menuAtivo .menu nav{/*Esse ".menuAtivo" vai ser adicionado com o JavaScript, quando adicionar ele vai jogar o menu todo para a direita, essa classe é adicionada no "<html lang = pt-br>", ou seja, a classe fica por cima de todas a classes, por ela aparecer no html que é o conteiner que consiste o site inteiro, e que estão as outras classes dentro*/
+        right: 0px;
+    }
+    .menu article h1{
+        width: 100%;
+    }
+    .menu nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu article ul a li{
+        margin-top: -10px;
+    }
+    .menu nav ul a{
+        text-decoration: none;
+        margin: 5% 20%;
+        padding: 10% 0%;
+        width: 120px;
+        height: 15px;
+        text-align: center;
+        border-radius: 10px;
+        color: #8c375f;
+        background: #401230;
+    }
+    .abrirMenu {
+        background: url(../img/Icones/menu.svg) no-repeat;
+        background-size: 40px 40px;/*Tamanho da imagem de fundo, ou o tamanho da imagem*/
+        padding: 25px;
+        border: 0px;
+        margin-left: 5%;
+        margin-top: 12%;
+        display: block;
+    }
+    .fecharMenu {
+        background: url(../img/Icones/fechar.svg) no-repeat;
+        background-size: 40px 40px;
+        padding: 25px;
+        border: 0px;
+        margin-right: 5%;
+        display: block;
+    }
+    /****************************************************************************************************************************************/
+
+    .menu article h1{
+        width: 100%;
+    }
+    .banner{
+        display: none;
+    }
+    .depoimento article p{
+        line-height: 20pt;/*É o tamanho do espaçamentos da linha de cima dos textos*/
+        font-size: 0.8em;/*Diminui a fonte, ai no caso fica com 80% do tamanho definido da fonte*/
+        padding: 50px 15px;
+    }
+    .depoimento article h4 {
+        padding-bottom: 50px;
+    }
+    .sobre img {
+        width: 100%;
+    }
+    .info article {
+        margin: 0;
+    }
+    .info .infoContato div {
+        width: 100%;/*Para se manter com a largura do aparelho, ai no caso vai pegar os 100% do tamanho da largura do aparelho*/
+    }
+    .info article .infoSobre {
+        width: 100%;
+    }
+    .info .infoSobre div img {
+        width: 50px;
+        height: 50px;
+    }
+}
