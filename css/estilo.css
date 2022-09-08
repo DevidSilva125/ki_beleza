@@ -475,6 +475,81 @@ p { /*Esse caminho vai servir para todos os "p" */
     color: #d89ad9;
 }
 
+.formContato {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #401230;
+}
+.formContato h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+.formContato .site nav {
+    display: flex;
+    justify-content: space-between;
+}
+.formContato .site form nav div {
+    width: 550px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+.formContato .site nav label {
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    text-align: left;
+}
+.formContato .site nav input {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    height: 50px;
+}
+.formContato .site nav textarea{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    resize: none;
+}
+.botoesForm {
+    display: flex;
+    justify-content: space-between;
+}
+.formContato .site nav .botoesForm .btnForm{
+    width: 30%;
+    margin: 1px auto;
+    color: #2a2a2a;
+    text-align: center;
+    background: #f2f2f2;
+    border: 2px solid #401230;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 16px;
+}
+.formContato .site  nav .botoesForm .btnForm:hover{
+    width: 30%;
+    margin: 1px auto;
+    color: #f2f2f2;
+    cursor: pointer;
+    text-align: center;
+    background: #401230;
+    border: 2px solid #401230;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 16px;
+}
+
 
 /************************************************Responsivo*************************************************************************/
 @media (max-width: 960px) {/*Entra o responsivo, colocamos para que quando for menos que 800px ele vai fazer as edições que colocaremos*/

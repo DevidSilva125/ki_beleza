@@ -50,7 +50,7 @@
                    <a href="blog.php" class="item-menu">
                        <li>BLOG</li>
                    </a>
-                   <a href="#" class="item-menu">
+                   <a href="contato.php" class="item-menu">
                        <li>CONTATO</li>
                    </a>
                </ul>
