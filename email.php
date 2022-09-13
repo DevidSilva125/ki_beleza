@@ -24,6 +24,7 @@ if (isset($_POST['enviar']))
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
+        
         //Recebimento
         $mail->setFrom('cebolinhacebola69@gmail.com', 'Site');
         $mail->addAddress('cebolinhacebola69@gmail.com', 'Devid');     //Add a recipient
