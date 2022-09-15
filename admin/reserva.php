@@ -6,7 +6,7 @@
     $data = file_get_contents("php://input");
     $objData = json_decode($data);
 
-    $codFunc = $objData->codFunc;
+    $codFuncionario = $objData->codFuncionario;
     $dataReserva = $objData->dataReserva;
     $codCliente = $objData->codCliente;
     $codServico = $objData->codServico;
